@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Inspiration</title>
+
+<link href="CSS.css" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Playfair+Display&display=swap');
+
+  body {
+    background-color: #A5D7E7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    border: 2px solid #417268;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    transition: transform 0.2s;
+  }
+
+  nav a:hover {
+    transform: scale(1.1);
+  }
+
+  h2 {
+    border: 10px solid #417268;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: antiquewhite;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; /* controls image width */
+    overflow: hidden;
+    border: 4px solid #417268;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+
+  a.image-link {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a.image-link:hover .image-container {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  a.image-link:hover .overlay {
+    opacity: 1;
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Index</a></li>
+    <li><a href="inspiration.html">Inspiration</a></li>   
+	 <li><a href="Sketchbook.html">Sketchbook</a></li>
+    <li><a href="Processes.html">Processes</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+</nav>
+
+<div class="gallery-row">
+  <div class="row"> 
+    <a href="https://sterlinghundley.com/work" target="_blank" class="image-link">
+      <div class="image-container">
+        <img src="flower6.JPG" alt="Flower blue" />
+        <div class="overlay">Sterling Hundley</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="row"> 
+    <a href="https://arcadiacontemporary.com/artists/47-denis-sarazhin/works/" target="_blank" class="image-link">
+      <div class="image-container">
+        <img src="flower10.jpg" alt="Flower orange" />
+        <div class="overlay">Chris Sarazhin</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="row"> 
+    <a href="https://www.davidzwirner.com/artists/neo-rauch/survey" target="_blank" class="image-link">
+      <div class="image-container">
+        <img src="flower7.JPG" alt="Flower Pink" />
+        <div class="overlay">Neo Rauch</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="row"> 
+    <a href="https://mdbk.de/en/exhibitions/bernhard-heisig/" target="_blank" class="image-link">
+      <div class="image-container">
+        <img src="flower8.JPG" alt="Flower Green" />
+        <div class="overlay">Bernhard Heisig</div>
+      </div>
+    </a>
+  </div>
+</div>
+  <h3>End of page!</h3>
+<h3>Contact:</h3>
+
+<!-- Centered Email Link -->
+<div style="text-align: center;">
+  <a href="mailto:fakeemail@gmail.com">fakeemail@gmail.com</a>
+</div>
+</body>
+</html>
